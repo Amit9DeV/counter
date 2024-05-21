@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button clicked</title>
+    <link rel="stylesheet" href="/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+     
+<div class="container-fluid myContainer">
+    <div class="container myContainer">
+        <h2>0</h2>
+        <div class="div">
+        <button onclick="Add()" class="btn btn-primary" >ADD</button>
+        <button onclick="Minus()" class="btn btn-danger" >MINUS</button>
+    </div>
+    </div>
+</div>
+
+<script>
+    let count = 0;
+     function Add(){
+        count = count+1;
+        document.querySelector("h2").innerText = count
+     }
+
+     function Minus(){
+        count = count - 1;
+        document.querySelector("h2").innerText = count
+     }
+
+</script>
+
+</body>
+</html>
